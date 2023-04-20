@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <h1>Read ME</h1>
+      </a>
+      <ul>
+        <li><a href="./addbook.html">Add Book</a></li>
+        <li><a href="./index.html">Back to main</a></li>
+      </ul>
+    </header>
+    <section class="book-section">
+      <div class="book-wrapper" id="book-wrapper">
+        <img id="book-photo" class="book-photo"></img>
+        <div class="text-content">
+          <div class="upper-text">
+            <div class="titleandcity">
+              <h2 class="book-title" id="book-title"></h2>
+              <div class="book-city" id="book-city"></div>
+            </div>
+            <h2 class="book-price" id="book-price"></h2>
+          </div>
+          <div class="book-description" id="book-description"></div>
+        </div>
+      </div>
+      <button id="remove-book" class="remove-book"><i class="fa fa-trash" aria-hidden="true"></i> Remove Book</button>
+      <h2 id="removed-message" class="removed-message"></h2>
+    </section>
+    <footer><p>&copy; Read Me &reg; All rights reserved 2023</p></footer>
+    <script src="onebookpage.js"></script>
+  </body>
+</html>

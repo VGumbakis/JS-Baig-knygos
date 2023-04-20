@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Book</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <h1>Read ME</h1>
+      </a>
+      <ul>
+        <li><a href="./index.html">Back to main</a></li>
+      </ul>
+    </header>
+    <div class="book-form">
+      <h1>Enter your book details</h1>
+      <input id="title" placeholder="Book title" class="form-control" />
+      <input id="description" placeholder="Book description" class="form-control" />
+      <input id="city" placeholder="City" class="form-control" />
+      <input id="price" placeholder="Book price" class="form-control" type="number" />
+      <input id="photourl" placeholder="URL of the book photo" class="form-control" />
+      <button id="submit" class="submit">add book</button>
+      <h2 id="added-message" class="added-message"></h2>
+    </div>
+    <footer><p>&copy; Read Me &reg; All rights reserved 2023</p></footer>
+    <script src="addbook.js"></script>
+  </body>
+</html>
