@@ -31,7 +31,9 @@ const bookToHtml = (book) => {
   title.setAttribute('class', 'title');
   title.innerHTML = book.title;
   const description = document.createElement('div');
+  description.setAttribute('class', 'description');
   description.innerHTML = book.description;
+
   const price = document.createElement('div');
   price.setAttribute('class', 'price');
   price.innerHTML = `${book.price} €`;

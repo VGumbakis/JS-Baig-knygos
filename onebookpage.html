@@ -14,13 +14,16 @@
         <h1>Read ME</h1>
       </a>
       <ul>
-        <li><a href="./addbook.html">Add Book</a></li>
         <li><a href="./index.html">Back to main</a></li>
+        <li><a href="./addbook.html">Add Book</a></li>
       </ul>
     </header>
     <section class="book-section">
       <div class="book-wrapper" id="book-wrapper">
-        <img id="book-photo" class="book-photo"></img>
+        <div class="imgdlt">
+          <img id="book-photo" class="book-photo"></img>
+          <button id="remove-book" class="remove-book"><i class="fa fa-trash" aria-hidden="true"></i> Remove Book</button>
+        </div>
         <div class="text-content">
           <div class="upper-text">
             <div class="titleandcity">
@@ -32,7 +35,7 @@
           <div class="book-description" id="book-description"></div>
         </div>
       </div>
-      <button id="remove-book" class="remove-book"><i class="fa fa-trash" aria-hidden="true"></i> Remove Book</button>
+      
       <h2 id="removed-message" class="removed-message"></h2>
     </section>
     <footer><p>&copy; Read Me &reg; All rights reserved 2023</p></footer>

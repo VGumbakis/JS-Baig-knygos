@@ -3,10 +3,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-}
-
-h1 {
-  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -28,12 +25,11 @@ ul li a {
 
 ul li a:hover {
   color: white;
-  background-color: teal;
   border-radius: 3px;
 }
 
 header {
-  background-color: green;
+  background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -41,15 +37,12 @@ header {
   padding: 0 5%;
 }
 
+/* index page */
+
 .all-books-wrapper {
   margin: 20px 0;
   padding: 0 5%;
   border-bottom: 1px solid grey;
-}
-
-.book-link {
-  text-decoration: none;
-  color: black;
 }
 
 .inline-book-wrapper {
@@ -57,15 +50,20 @@ header {
   justify-content: space-between;
   border-top: 1px solid grey;
   padding: 10px 0;
-}
-
-.inline-book-wrapper:last-child {
+  transition: all 1s;
 }
 
 .inline-book-wrapper img {
   height: 200px;
   width: 150px;
   object-fit: cover;
+}
+
+.inline-book-wrapper:hover {
+  background-color: #fffaa0;
+  border: 1px solid grey;
+  border-radius: 5px;
+  transition: all 1s;
 }
 
 .city {
@@ -79,11 +77,6 @@ header {
   justify-content: space-around;
 }
 
-.upper-text {
-  display: flex;
-  justify-content: space-between;
-}
-
 .title {
   color: green;
 }
@@ -91,6 +84,8 @@ header {
 .price {
   font-weight: bold;
 }
+
+/* onebookpage */
 
 .book-section {
   margin: 20px 0;
@@ -101,8 +96,13 @@ header {
   margin-bottom: 20px;
 }
 
-.book-city {
-  font-style: italic;
+.imgdlt {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.book-photo {
 }
 
 .remove-book {
@@ -111,6 +111,7 @@ header {
   border-radius: 3px;
   padding: 5px;
   transition: all 1ms ease;
+  height: 30px;
 }
 
 .remove-book:hover {
@@ -119,13 +120,37 @@ header {
   transition: all 1ms ease;
 }
 
+.upper-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-content {
+}
+
+.titleandcity {
+}
+
+.book-title {
+}
+
+.book-city {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.book-price {
+  color: green;
+}
+
+.book-description {
+}
+
 .removed-message {
   color: red;
 }
 
-.added-message {
-  color: green;
-}
+/* add book */
 
 .book-form {
   display: flex;
@@ -148,15 +173,48 @@ header {
   background-color: teal;
 }
 
-.book-price {
+.added-message {
   color: green;
-  font-size: 2em;
 }
 
 footer {
-  background-color: green;
+  background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    flex-direction: column;
+    height: 150px;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inline-book-wrapper {
+    flex-direction: column;
+    align-content: space-around;
+  }
+
+  .city {
+    margin-bottom: 10px;
+  }
+
+  .price {
+    margin-top: 10px;
+  }
+  .upper-text {
+    display: block;
+  }
+  .imgdlt {
+    flex-direction: column;
+  }
+  .book-photo {
+    display: block;
+    justify-content: center;
+  }
 }
