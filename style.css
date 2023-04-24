@@ -23,12 +23,16 @@ ul {
 }
 
 ul li a {
-  color: orange;
+  color: #544335;
 }
 
 ul li a:hover {
   color: white;
   border-radius: 3px;
+}
+
+h1 {
+  color: #544335;
 }
 
 header {
