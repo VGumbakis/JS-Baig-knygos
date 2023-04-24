@@ -24,6 +24,7 @@ ul {
 
 ul li a {
   color: #544335;
+  font-weight: 600;
 }
 
 ul li a:hover {
@@ -195,6 +196,7 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: auto;
+  color: #544335;
 }
 
 @media screen and (max-width: 650px) {
@@ -228,5 +230,8 @@ footer {
   .book-photo {
     display: block;
     justify-content: center;
+  }
+  .submit {
+    margin-bottom: 35px;
   }
 }
