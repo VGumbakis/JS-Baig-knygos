@@ -28,12 +28,16 @@ ul li a {
 }
 
 ul li a:hover {
-  color: white;
+  color: grey;
   border-radius: 3px;
 }
 
 h1 {
   color: #544335;
+}
+
+h1:hover {
+  color: grey;
 }
 
 header {
