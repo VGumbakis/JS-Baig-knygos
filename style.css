@@ -4,6 +4,9 @@ body {
   padding: 0;
   position: relative;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -148,6 +151,8 @@ header {
 
 .removed-message {
   color: red;
+  text-align: center;
+  margin: auto;
 }
 
 /* add book */
@@ -175,6 +180,8 @@ header {
 
 .added-message {
   color: green;
+  text-align: center;
+  margin: auto;
 }
 
 footer {
@@ -183,6 +190,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
 }
 
 @media screen and (max-width: 650px) {

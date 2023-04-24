@@ -13,6 +13,8 @@ const fetchBooks = (newBook) => {
       return data.json();
     })
     .then((data) => {
+      const hideForm = document.getElementById('book-form');
+      hideForm.style.display = 'none';
       const addedMessage = document.getElementById('added-message');
       addedMessage.innerHTML = 'Book added';
 

@@ -29,6 +29,8 @@ const removeBook = () => {
   fetch(`https://643d73daf0ec48ce905cc21e.mockapi.io/book/${bookId}`, {
     method: 'DELETE',
   }).then((res) => {
+    const hideBook = document.getElementById('book-section');
+    hideBook.style.display = 'none';
     const removedMessage = document.getElementById('removed-message');
     removedMessage.innerHTML = 'Book Removed';
     setTimeout(() => {

@@ -16,7 +16,7 @@
         <li><a href="./index.html">Back to main</a></li>
       </ul>
     </header>
-    <div class="book-form">
+    <div id="book-form" class="book-form">
       <h2>Enter your book details</h2>
       <input id="title" placeholder="Book title" class="form-control" />
       <input id="description" placeholder="Book description" class="form-control" />
@@ -24,9 +24,10 @@
       <input id="price" placeholder="Book price" class="form-control" type="number" />
       <input id="photourl" placeholder="URL of the book photo" class="form-control" />
       <button id="submit" class="submit">add book</button>
-      <h2 id="added-message" class="added-message"></h2>
     </div>
-    <footer><p>&copy; Read Me &reg; All rights reserved 2023</p></footer>
+
+    <h2 id="added-message" class="added-message"></h2>
+    <footer class="custom-footer"><p>&copy; Read Me &reg; All rights reserved 2023</p></footer>
     <script src="addbook.js"></script>
   </body>
 </html>
